@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 1</title>
+    <script type="module" src="main.js" defer></script>
+  </head>
+  <body>
+    <h1>WebGL</h1>
+    <h2>Exemplo 1</h2>
+    <div id="exemplo1">
+      <canvas></canvas>
+    </div>
+    <h2>exemplo 2</h2>
+    <div id="exemplo2">
+      <canvas id="c"></canvas>
+      <script id="vertex-shader-2d" type="notjs">
+        attribute vec2 position;
+        attribute vec3 color;
+        varying vec3 vColor;
+
+        void main() {
+            gl_Position = vec4(position,0.0,1.0);
+            vColor = color;
+        }
+      </script>
+      <script id="fragment-shader-2d" type="notjs">
+        precision mediump float;
+
+        varying vec3 vColor;
+
+        void main() {
+            gl_FragColor = vec4(vColor,1.0);
+        }
+      </script>
+    </div>
+    <h2>exemplo 3</h2>
+    <div id="exemplo3">
+      <canvas id="c"></canvas>
+      <script id="vertex-shader-2d" type="notjs">
+        attribute vec2 position;
+        attribute vec3 color;
+        varying vec3 vColor;
+
+        void main() {
+            gl_Position = vec4(position,0.0,1.0);
+            vColor = color;
+        }
+      </script>
+      <script id="fragment-shader-2d" type="notjs">
+        precision mediump float;
+
+        varying vec3 vColor;
+
+        void main() {
+            gl_FragColor = vec4(vColor,1.0);
+        }
+      </script>
+    </div>
+    <h2>exemplo 4</h2>
+    <div id="exemplo4">
+      <canvas id="c"></canvas>
+      <script id="vertex-shader-2d" type="notjs">
+        attribute vec2 position;
+        attribute vec3 color;
+        varying vec3 vColor;
+
+        void main() {
+            gl_Position = vec4(position,0.0,1.0);
+            vColor = color;
+        }
+      </script>
+      <script id="fragment-shader-2d" type="notjs">
+        precision mediump float;
+
+        varying vec3 vColor;
+
+        void main() {
+            gl_FragColor = vec4(vColor,1.0);
+        }
+      </script>
+    </div>
+    <div id="exemplo5">
+      <h2>exemplo 5</h2>
+      <canvas id="c"></canvas>
+      <script id="vertex-shader-2d" type="notjs">
+        attribute vec2 position;
+        attribute vec3 color;
+        varying vec3 vColor;
+
+        void main() {
+            gl_Position = vec4(position,0.0,1.0);
+            vColor = color;
+        }
+      </script>
+      <script id="fragment-shader-2d" type="notjs">
+        precision mediump float;
+
+        varying vec3 vColor;
+
+        void main() {
+            gl_FragColor = vec4(vColor,1.0);
+        }
+      </script>
+    </div>
+    <div id="exercicio1">
+      <h2>Exercicio 1</h2>
+      <canvas id="c"></canvas>
+    </div>
+  </body>
+</html>
